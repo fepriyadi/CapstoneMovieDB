@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import Movie
 import Core
+import Movie
 
 struct BackdropFavView: View {
     let movies: [Movie]

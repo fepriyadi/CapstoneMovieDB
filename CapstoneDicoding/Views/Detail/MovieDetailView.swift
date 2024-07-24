@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import Movie
 import Core
+import Movie
 
 struct MovieDetailView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>

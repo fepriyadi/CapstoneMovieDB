@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,9 @@
 		910EEB762C4FD7D000B0748E /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB752C4FD7D000B0748E /* SearchRow.swift */; };
 		910EEB7A2C4FE8EF00B0748E /* CapstoneDicodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB772C4FE8EF00B0748E /* CapstoneDicodingApp.swift */; };
 		910EEB7B2C4FE8EF00B0748E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB782C4FE8EF00B0748E /* ContentView.swift */; };
-		910EEB852C50F52500B0748E /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEB842C50F52500B0748E /* Core */; };
-		910EEB882C5100BC00B0748E /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEB872C5100BC00B0748E /* Movie */; };
-		910EEB8B2C51042000B0748E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEB8A2C51042000B0748E /* Alamofire */; };
+		910EEB952C51124300B0748E /* CapstoneDicodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */; };
+		910EEC472C51398700B0748E /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC462C51398700B0748E /* Core */; };
+		910EEC4F2C513C7A00B0748E /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC4E2C513C7A00B0748E /* Movie */; };
 		915C84162BFD5F5D00FA112C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84152BFD5F5D00FA112C /* Assets.xcassets */; };
 		915C84192BFD5F5D00FA112C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84182BFD5F5D00FA112C /* Preview Assets.xcassets */; };
 		915C84272BFD650600FA112C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C84262BFD650600FA112C /* SafariView.swift */; };
@@ -38,9 +38,17 @@
 		915C84572BFD69FE00FA112C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C84562BFD69FE00FA112C /* FavouriteView.swift */; };
 		915F4DCA2C32E28F00BADA78 /* BackdropFavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F4DC92C32E28F00BADA78 /* BackdropFavView.swift */; };
 		915F4DD42C36742700BADA78 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F4DD32C36742700BADA78 /* Injection.swift */; };
-		91DE37702C48057C000ECF61 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 91DE376F2C48057C000ECF61 /* Core */; };
-		91DE37732C48058C000ECF61 /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 91DE37722C48058C000ECF61 /* Movie */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		910EEB962C51124300B0748E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 915C84062BFD5F5B00FA112C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 915C840D2BFD5F5C00FA112C;
+			remoteInfo = CapstoneDicoding;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		910EEB6F2C4FD50D00B0748E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -49,6 +57,11 @@
 		910EEB752C4FD7D000B0748E /* SearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRow.swift; sourceTree = "<group>"; };
 		910EEB772C4FE8EF00B0748E /* CapstoneDicodingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapstoneDicodingApp.swift; sourceTree = "<group>"; };
 		910EEB782C4FE8EF00B0748E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		910EEB922C51124300B0748E /* CapstoneDicodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneDicodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneDicodingTests.swift; sourceTree = "<group>"; };
+		910EEBED2C5126E100B0748E /* CapstoneMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CapstoneMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910EEC022C512E4200B0748E /* CapstoneMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CapstoneMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910EEC0E2C51312700B0748E /* CapstoneMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CapstoneMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		915C840E2BFD5F5C00FA112C /* CapstoneDicoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneDicoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915C84152BFD5F5D00FA112C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915C84182BFD5F5D00FA112C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -75,21 +88,35 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		910EEB8F2C51124300B0748E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		915C840B2BFD5F5C00FA112C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910EEB8B2C51042000B0748E /* Alamofire in Frameworks */,
-				91DE37732C48058C000ECF61 /* Movie in Frameworks */,
-				910EEB882C5100BC00B0748E /* Movie in Frameworks */,
-				91DE37702C48057C000ECF61 /* Core in Frameworks */,
-				910EEB852C50F52500B0748E /* Core in Frameworks */,
+				910EEC472C51398700B0748E /* Core in Frameworks */,
+				910EEC4F2C513C7A00B0748E /* Movie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E01B7802AD814D4DA0FB8C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				910EEC0E2C51312700B0748E /* CapstoneMovie.framework */,
+				910EEC022C512E4200B0748E /* CapstoneMovie.framework */,
+				910EEBED2C5126E100B0748E /* CapstoneMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		910EEB792C4FE8EF00B0748E /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,11 +166,21 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		910EEB932C51124300B0748E /* CapstoneDicodingTests */ = {
+			isa = PBXGroup;
+			children = (
+				910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */,
+			);
+			path = CapstoneDicodingTests;
+			sourceTree = "<group>";
+		};
 		915C84052BFD5F5B00FA112C = {
 			isa = PBXGroup;
 			children = (
 				915C84102BFD5F5C00FA112C /* CapstoneDicoding */,
+				910EEB932C51124300B0748E /* CapstoneDicodingTests */,
 				915C840F2BFD5F5C00FA112C /* Products */,
+				0E01B7802AD814D4DA0FB8C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				915C840E2BFD5F5C00FA112C /* CapstoneDicoding.app */,
+				910EEB922C51124300B0748E /* CapstoneDicodingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +286,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		910EEB912C51124300B0748E /* CapstoneDicodingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910EEB982C51124300B0748E /* Build configuration list for PBXNativeTarget "CapstoneDicodingTests" */;
+			buildPhases = (
+				910EEB8E2C51124300B0748E /* Sources */,
+				910EEB8F2C51124300B0748E /* Frameworks */,
+				910EEB902C51124300B0748E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				910EEB972C51124300B0748E /* PBXTargetDependency */,
+			);
+			name = CapstoneDicodingTests;
+			productName = CapstoneDicodingTests;
+			productReference = 910EEB922C51124300B0748E /* CapstoneDicodingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		915C840D2BFD5F5C00FA112C /* CapstoneDicoding */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 915C841C2BFD5F5D00FA112C /* Build configuration list for PBXNativeTarget "CapstoneDicoding" */;
@@ -262,11 +318,8 @@
 			);
 			name = CapstoneDicoding;
 			packageProductDependencies = (
-				91DE376F2C48057C000ECF61 /* Core */,
-				91DE37722C48058C000ECF61 /* Movie */,
-				910EEB842C50F52500B0748E /* Core */,
-				910EEB872C5100BC00B0748E /* Movie */,
-				910EEB8A2C51042000B0748E /* Alamofire */,
+				910EEC462C51398700B0748E /* Core */,
+				910EEC4E2C513C7A00B0748E /* Movie */,
 			);
 			productName = CapstoneDicoding;
 			productReference = 915C840E2BFD5F5C00FA112C /* CapstoneDicoding.app */;
@@ -282,6 +335,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					910EEB912C51124300B0748E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 915C840D2BFD5F5C00FA112C;
+					};
 					915C840D2BFD5F5C00FA112C = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -297,20 +354,27 @@
 			);
 			mainGroup = 915C84052BFD5F5B00FA112C;
 			packageReferences = (
-				910EEB832C50F52500B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */,
-				910EEB862C5100BC00B0748E /* XCRemoteSwiftPackageReference "CapstoneMovie" */,
-				910EEB892C51042000B0748E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				910EEC0B2C512F4400B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */,
+				910EEC4D2C513C4100B0748E /* XCLocalSwiftPackageReference "Module/Movie" */,
 			);
 			productRefGroup = 915C840F2BFD5F5C00FA112C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				915C840D2BFD5F5C00FA112C /* CapstoneDicoding */,
+				910EEB912C51124300B0748E /* CapstoneDicodingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		910EEB902C51124300B0748E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		915C840C2BFD5F5C00FA112C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +392,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		910EEB8E2C51124300B0748E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910EEB952C51124300B0748E /* CapstoneDicodingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		915C840A2BFD5F5C00FA112C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,7 +430,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		910EEB972C51124300B0748E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 915C840D2BFD5F5C00FA112C /* CapstoneDicoding */;
+			targetProxy = 910EEB962C51124300B0748E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		910EEB992C51124300B0748E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRYDJB6WTG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.dicoding.CapstoneDicodingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapstoneDicoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CapstoneDicoding";
+			};
+			name = Debug;
+		};
+		910EEB9A2C51124300B0748E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GRYDJB6WTG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.dicoding.CapstoneDicodingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapstoneDicoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CapstoneDicoding";
+			};
+			name = Release;
+		};
 		915C841A2BFD5F5D00FA112C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -539,6 +655,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		910EEB982C51124300B0748E /* Build configuration list for PBXNativeTarget "CapstoneDicodingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910EEB992C51124300B0748E /* Debug */,
+				910EEB9A2C51124300B0748E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		915C84092BFD5F5B00FA112C /* Build configuration list for PBXProject "CapstoneDicoding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -559,8 +684,15 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		910EEC4D2C513C4100B0748E /* XCLocalSwiftPackageReference "Module/Movie" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Module/Movie;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
-		910EEB832C50F52500B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */ = {
+		910EEC0B2C512F4400B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fepriyadi/CapstoneCore.git";
 			requirement = {
@@ -568,46 +700,17 @@
 				kind = branch;
 			};
 		};
-		910EEB862C5100BC00B0748E /* XCRemoteSwiftPackageReference "CapstoneMovie" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/fepriyadi/CapstoneMovie.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		910EEB892C51042000B0748E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		910EEB842C50F52500B0748E /* Core */ = {
+		910EEC462C51398700B0748E /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 910EEB832C50F52500B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */;
+			package = 910EEC0B2C512F4400B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */;
 			productName = Core;
 		};
-		910EEB872C5100BC00B0748E /* Movie */ = {
+		910EEC4E2C513C7A00B0748E /* Movie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 910EEB862C5100BC00B0748E /* XCRemoteSwiftPackageReference "CapstoneMovie" */;
-			productName = Movie;
-		};
-		910EEB8A2C51042000B0748E /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 910EEB892C51042000B0748E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		91DE376F2C48057C000ECF61 /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
-		};
-		91DE37722C48058C000ECF61 /* Movie */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = 910EEC4D2C513C4100B0748E /* XCLocalSwiftPackageReference "Module/Movie" */;
 			productName = Movie;
 		};
 /* End XCSwiftPackageProductDependency section */
