@@ -1,0 +1,33 @@
+{
+  "originHash" : "cf98dd37ddaebd2665a00bce46f7030a8f8a2318b055f4c813e53e6136e39f7d",
+  "pins" : [
+    {
+      "identity" : "capstonecore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fepriyadi/CapstoneCore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5132b4bc9f044b6583900dbde27676733067e95e"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "f889f79a2301208fd9d322d07abfc883b8f2046c",
+        "version" : "14.10.2"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2fd2e3f121920bb23e3fbb8e5c61c40089c5b4aa"
+      }
+    }
+  ],
+  "version" : 3
+}
