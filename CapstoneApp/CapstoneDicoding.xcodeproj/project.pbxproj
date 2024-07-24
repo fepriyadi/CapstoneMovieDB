@@ -15,7 +15,7 @@
 		910EEB7B2C4FE8EF00B0748E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB782C4FE8EF00B0748E /* ContentView.swift */; };
 		910EEB952C51124300B0748E /* CapstoneDicodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */; };
 		910EEC472C51398700B0748E /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC462C51398700B0748E /* Core */; };
-		910EEC4F2C513C7A00B0748E /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC4E2C513C7A00B0748E /* Movie */; };
+		910EEC522C51C59200B0748E /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC512C51C59200B0748E /* Movie */; };
 		915C84162BFD5F5D00FA112C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84152BFD5F5D00FA112C /* Assets.xcassets */; };
 		915C84192BFD5F5D00FA112C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84182BFD5F5D00FA112C /* Preview Assets.xcassets */; };
 		915C84272BFD650600FA112C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C84262BFD650600FA112C /* SafariView.swift */; };
@@ -100,7 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				910EEC472C51398700B0748E /* Core in Frameworks */,
-				910EEC4F2C513C7A00B0748E /* Movie in Frameworks */,
+				910EEC522C51C59200B0748E /* Movie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +319,7 @@
 			name = CapstoneDicoding;
 			packageProductDependencies = (
 				910EEC462C51398700B0748E /* Core */,
-				910EEC4E2C513C7A00B0748E /* Movie */,
+				910EEC512C51C59200B0748E /* Movie */,
 			);
 			productName = CapstoneDicoding;
 			productReference = 915C840E2BFD5F5C00FA112C /* CapstoneDicoding.app */;
@@ -355,7 +355,7 @@
 			mainGroup = 915C84052BFD5F5B00FA112C;
 			packageReferences = (
 				910EEC0B2C512F4400B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */,
-				910EEC4D2C513C4100B0748E /* XCLocalSwiftPackageReference "Module/Movie" */,
+				910EEC502C51C59200B0748E /* XCLocalSwiftPackageReference "../Module/Movie" */,
 			);
 			productRefGroup = 915C840F2BFD5F5C00FA112C /* Products */;
 			projectDirPath = "";
@@ -685,9 +685,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		910EEC4D2C513C4100B0748E /* XCLocalSwiftPackageReference "Module/Movie" */ = {
+		910EEC502C51C59200B0748E /* XCLocalSwiftPackageReference "../Module/Movie" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Module/Movie;
+			relativePath = ../Module/Movie;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -708,9 +708,8 @@
 			package = 910EEC0B2C512F4400B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */;
 			productName = Core;
 		};
-		910EEC4E2C513C7A00B0748E /* Movie */ = {
+		910EEC512C51C59200B0748E /* Movie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 910EEC4D2C513C4100B0748E /* XCLocalSwiftPackageReference "Module/Movie" */;
 			productName = Movie;
 		};
 /* End XCSwiftPackageProductDependency section */
