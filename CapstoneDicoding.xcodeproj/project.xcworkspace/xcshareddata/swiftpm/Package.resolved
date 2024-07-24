@@ -1,5 +1,5 @@
 {
-  "originHash" : "726208c0e9e4ba6b9d8c8954064d2cac586b18f308e30fc33d004fbf2cab0ea8",
+  "originHash" : "7399582114f3409bf2640c5fd6ab9549fae0f7aa72e4a67566fddd63d1dd4d1f",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -11,30 +11,39 @@
       }
     },
     {
+      "identity" : "capstonecore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fepriyadi/CapstoneCore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5132b4bc9f044b6583900dbde27676733067e95e"
+      }
+    },
+    {
+      "identity" : "capstonemovie",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fepriyadi/CapstoneMovie.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "051471e12743e2685241837e82aa304b46cb9cba"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
       "state" : {
-        "revision" : "9cf7ef4ad8e2f4c7a519c9a395ca3d253bb87aa8",
-        "version" : "14.6.2"
+        "revision" : "f889f79a2301208fd9d322d07abfc883b8f2046c",
+        "version" : "14.10.2"
       }
     },
     {
       "identity" : "realm-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/realm/realm-swift",
+      "location" : "https://github.com/realm/realm-swift.git",
       "state" : {
         "branch" : "master",
-        "revision" : "83f6804a179cc8b68da62548d0c089beba27b577"
-      }
-    },
-    {
-      "identity" : "swiftlintplugins",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SimplyDanny/SwiftLintPlugins",
-      "state" : {
-        "revision" : "b8431a26655378581890d56b95a0b59aba9f62da",
-        "version" : "0.55.1"
+        "revision" : "2fd2e3f121920bb23e3fbb8e5c61c40089c5b4aa"
       }
     }
   ],

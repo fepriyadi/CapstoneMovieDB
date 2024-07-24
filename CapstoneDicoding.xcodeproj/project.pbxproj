@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		910A13EA2BFD80E6005F9BBE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 910A13E92BFD80E6005F9BBE /* RealmSwift */; };
 		910EEB702C4FD50D00B0748E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB6F2C4FD50D00B0748E /* SearchView.swift */; };
 		910EEB722C4FD79200B0748E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB712C4FD79200B0748E /* SearchBar.swift */; };
 		910EEB742C4FD7A700B0748E /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB732C4FD7A700B0748E /* CustomEmptyView.swift */; };
 		910EEB762C4FD7D000B0748E /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB752C4FD7D000B0748E /* SearchRow.swift */; };
 		910EEB7A2C4FE8EF00B0748E /* CapstoneDicodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB772C4FE8EF00B0748E /* CapstoneDicodingApp.swift */; };
 		910EEB7B2C4FE8EF00B0748E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB782C4FE8EF00B0748E /* ContentView.swift */; };
+		910EEB852C50F52500B0748E /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEB842C50F52500B0748E /* Core */; };
+		910EEB882C5100BC00B0748E /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEB872C5100BC00B0748E /* Movie */; };
 		915C84162BFD5F5D00FA112C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84152BFD5F5D00FA112C /* Assets.xcassets */; };
 		915C84192BFD5F5D00FA112C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84182BFD5F5D00FA112C /* Preview Assets.xcassets */; };
 		915C84272BFD650600FA112C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C84262BFD650600FA112C /* SafariView.swift */; };
@@ -36,7 +37,6 @@
 		915C84572BFD69FE00FA112C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C84562BFD69FE00FA112C /* FavouriteView.swift */; };
 		915F4DCA2C32E28F00BADA78 /* BackdropFavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F4DC92C32E28F00BADA78 /* BackdropFavView.swift */; };
 		915F4DD42C36742700BADA78 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F4DD32C36742700BADA78 /* Injection.swift */; };
-		91D35FA92C369203004C701E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 91D35FA82C369203004C701E /* Alamofire */; };
 		91DE37702C48057C000ECF61 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 91DE376F2C48057C000ECF61 /* Core */; };
 		91DE37732C48058C000ECF61 /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 91DE37722C48058C000ECF61 /* Movie */; };
 /* End PBXBuildFile section */
@@ -78,10 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910A13EA2BFD80E6005F9BBE /* RealmSwift in Frameworks */,
 				91DE37732C48058C000ECF61 /* Movie in Frameworks */,
-				91D35FA92C369203004C701E /* Alamofire in Frameworks */,
+				910EEB882C5100BC00B0748E /* Movie in Frameworks */,
 				91DE37702C48057C000ECF61 /* Core in Frameworks */,
+				910EEB852C50F52500B0748E /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +260,10 @@
 			);
 			name = CapstoneDicoding;
 			packageProductDependencies = (
-				910A13E92BFD80E6005F9BBE /* RealmSwift */,
-				91D35FA82C369203004C701E /* Alamofire */,
 				91DE376F2C48057C000ECF61 /* Core */,
 				91DE37722C48058C000ECF61 /* Movie */,
+				910EEB842C50F52500B0748E /* Core */,
+				910EEB872C5100BC00B0748E /* Movie */,
 			);
 			productName = CapstoneDicoding;
 			productReference = 915C840E2BFD5F5C00FA112C /* CapstoneDicoding.app */;
@@ -294,11 +294,8 @@
 			);
 			mainGroup = 915C84052BFD5F5B00FA112C;
 			packageReferences = (
-				910A13E62BFD80E6005F9BBE /* XCRemoteSwiftPackageReference "realm-swift" */,
-				91D35FA72C369203004C701E /* XCRemoteSwiftPackageReference "Alamofire" */,
-				91DE376E2C48057C000ECF61 /* XCLocalSwiftPackageReference "../Core" */,
-				91DE37712C48058C000ECF61 /* XCLocalSwiftPackageReference "../Movie" */,
-				910EEB812C4FEB5700B0748E /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				910EEB832C50F52500B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */,
+				910EEB862C5100BC00B0748E /* XCRemoteSwiftPackageReference "CapstoneMovie" */,
 			);
 			productRefGroup = 915C840F2BFD5F5C00FA112C /* Products */;
 			projectDirPath = "";
@@ -558,54 +555,35 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		91DE376E2C48057C000ECF61 /* XCLocalSwiftPackageReference "../Core" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Core;
-		};
-		91DE37712C48058C000ECF61 /* XCLocalSwiftPackageReference "../Movie" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Movie;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		910A13E62BFD80E6005F9BBE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		910EEB832C50F52500B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
+			repositoryURL = "https://github.com/fepriyadi/CapstoneCore.git";
 			requirement = {
-				branch = master;
+				branch = main;
 				kind = branch;
 			};
 		};
-		910EEB812C4FEB5700B0748E /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+		910EEB862C5100BC00B0748E /* XCRemoteSwiftPackageReference "CapstoneMovie" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			repositoryURL = "https://github.com/fepriyadi/CapstoneMovie.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.55.1;
-			};
-		};
-		91D35FA72C369203004C701E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.1;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		910A13E92BFD80E6005F9BBE /* RealmSwift */ = {
+		910EEB842C50F52500B0748E /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 910A13E62BFD80E6005F9BBE /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
+			package = 910EEB832C50F52500B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */;
+			productName = Core;
 		};
-		91D35FA82C369203004C701E /* Alamofire */ = {
+		910EEB872C5100BC00B0748E /* Movie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 91D35FA72C369203004C701E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 910EEB862C5100BC00B0748E /* XCRemoteSwiftPackageReference "CapstoneMovie" */;
+			productName = Movie;
 		};
 		91DE376F2C48057C000ECF61 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
