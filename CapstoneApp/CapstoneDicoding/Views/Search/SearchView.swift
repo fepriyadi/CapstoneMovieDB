@@ -13,7 +13,7 @@ struct SearchView: View {
     
     @ObservedObject var presenter: SearchPresenter<Movie, Interactor<String, [Movie], SearchMoviesRepository<GetMoviesDataSource>>>
     
-    @ObservedObject var detail: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>>>
+    @ObservedObject var detail: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>>>
     
     var body: some View {
         NavigationView {
@@ -49,7 +49,7 @@ struct SearchView: View {
                 }
                 Spacer()
             }.navigationBarTitle(
-                Text("Search Movie"),
+                Text("title_search".localized(identifier: "id.dicoding.CapstoneDicoding")),
                 displayMode: .automatic
             )
         }
@@ -75,13 +75,13 @@ extension SearchView {
     var emptyTitle: some View {
         CustomEmptyView(
             image: "assetSearchMovie",
-            title: "Come on, find your favorite movie!"
+            title: "msg_find_fav".localized(identifier: "id.dicoding.CapstoneDicoding")
         ).offset(y: 50)
     }
     var emptyMeals: some View {
         CustomEmptyView(
             image: "assetNotFound",
-            title: "Data not found"
+            title: "msg_not_found".localized(identifier: "id.dicoding.CapstoneDicoding")
         ).offset(y: 80)
     }
     

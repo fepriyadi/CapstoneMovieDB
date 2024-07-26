@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  CapstoneDicoding
+
+  Created by Fep on 25/07/24.
+  
+*/
+
+msg_add_fav = "Add to favorite successfull";
+msg_remove_fav = "Remove from favorite successfull";
+msg_empty_fav = "Hello, Add some your favorite movie :)";
+title_home = "Welcome to MovieDB";
+title_search = "Search Movie";
+title_about = "About me";
+title_favorite = "Your favorite Movie";
+msg_not_found = "Data not found";
+msg_find_fav = "Come on, find your favorite movie!";
+msg_failed_img = "Failed load image";
+btn_add_fav= "Add favorite";
+btn_remove_fav = "Remove favorite";

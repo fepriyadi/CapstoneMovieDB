@@ -13,7 +13,7 @@ struct MovieBackdropCarouselView: View {
     
     let title: String
     let movies: [Movie]
-    @ObservedObject var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>,FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
+    @ObservedObject var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>,FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> >
     
     var body: some View {
         LazyVStack(alignment: .leading, spacing: 0) {

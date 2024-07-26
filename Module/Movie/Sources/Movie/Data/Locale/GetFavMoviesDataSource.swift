@@ -10,7 +10,7 @@ import Combine
 import RealmSwift
 import Foundation
 
-public struct GetFavoriteMoviesDataSource : LocaleDataSource {
+public struct GetFavMoviesDataSource : LocaleDataSource {
     
     public typealias Request = String
     

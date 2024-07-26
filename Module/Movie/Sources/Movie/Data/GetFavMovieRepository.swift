@@ -8,7 +8,7 @@
 import Combine
 import Core
 
-public struct GetFavoriteMovieRepository<MoviesLocaleDataSource: LocaleDataSource>: Repository
+public struct GetFavMovieRepository<MoviesLocaleDataSource: LocaleDataSource>: Repository
 where
 MoviesLocaleDataSource.Request == String,
 MoviesLocaleDataSource.Response == MovieObject{

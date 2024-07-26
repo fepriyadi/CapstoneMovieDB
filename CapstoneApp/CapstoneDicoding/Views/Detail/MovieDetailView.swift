@@ -11,19 +11,16 @@ import Movie
 
 struct MovieDetailView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-    @ObservedObject private var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
-    
+    @ObservedObject private var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> >
     var movieId: Int
     private var isfavorite: Bool{
         get{ return presenter.movieObj?.favorite ?? false }
     }
-    
     init(movieId: Int, presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>,
-         FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>>>) {
+         FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>>>) {
         self.presenter = presenter
         self.movieId = movieId
     }
-    
     var body: some View {
         ZStack {
             LoadingView(isLoading: self.presenter.isLoading, error: nil) {
@@ -39,7 +36,6 @@ struct MovieDetailView: View {
         .navigationBarTitle(presenter.item?.title ?? "")
         .navigationBarItems(leading: Button(action : {
             self.mode.wrappedValue.dismiss()
-            
         }){
             Image(systemName: "arrow.left")
         })
@@ -61,10 +57,10 @@ struct MovieDetailView: View {
                             }
                         }
                     }, label: {
-                        if (isfavorite){
-                            Label("Remove Favorites", systemImage: "heart.fill")
+                        if isfavorite {
+                            Label("btn_remove_fav".localized(identifier: "id.dicoding.CapstoneDicoding"), systemImage: "heart.fill")
                         }else{
-                            Label("Add to Favorites", systemImage: "heart")
+                            Label("btn_add_fav".localized(identifier: "id.dicoding.CapstoneDicoding"), systemImage: "heart")
                         }
                     })
 
@@ -189,7 +185,7 @@ struct MovieDetailImage: View {
                         .aspectRatio(contentMode: .fit)
                 } else if phase.error != nil {
                     // Placeholder or error handling view
-                    Text("Failed to load image")
+                    Text("msg_failed_img".localized(identifier: "id.dicoding.CapstoneDicoding"))
                 } else {
                     // Placeholder view while loading
                     Rectangle().fill(Color.gray.opacity(0.3))

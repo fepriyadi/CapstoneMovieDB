@@ -10,11 +10,9 @@ import Core
 import Movie
 
 struct FavouriteView: View {
-    @ObservedObject var presenter: GetListPresenter<String, Movie, Interactor<String, [Movie], GetFavoriteMoviesRepository<GetFavoriteMoviesDataSource>>>
-    @ObservedObject var detailPresenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
-    
+    @ObservedObject var presenter: GetListPresenter<String, Movie, Interactor<String, [Movie], GetFavMoviesRepository<GetFavMoviesDataSource>>>
+    @ObservedObject var detailPresenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> >
     var body: some View {
-        VStack{
             NavigationView {
                     ZStack(alignment: .topLeading) {
                         Group {
@@ -22,7 +20,7 @@ struct FavouriteView: View {
                                 if self.presenter.list.count > 0{
                                     BackdropFavView(movies: self.presenter.list, presenter: detailPresenter)
                                 }else{
-                                    Text("Hello, Add some your favorite movie :)")
+                                    Text("msg_empty_fav".localized(identifier: "id.dicoding.CapstoneDicoding"))
                                 }
                             } else {
                                 LoadingView(isLoading: self.presenter.isLoading, error: nil) {
@@ -32,13 +30,11 @@ struct FavouriteView: View {
                         }
                         .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     }
-                    .navigationBarTitle("Your Fav Movie")
+                    .navigationBarTitle("title_favorite".localized(identifier: "id.dicoding.CapstoneDicoding"))
             }
             .onAppear {
                 self.presenter.getList(request: nil)
             }
-        }
-        
     }
 }
 

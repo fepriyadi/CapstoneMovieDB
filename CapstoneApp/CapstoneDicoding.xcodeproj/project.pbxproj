@@ -13,9 +13,14 @@
 		910EEB762C4FD7D000B0748E /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB752C4FD7D000B0748E /* SearchRow.swift */; };
 		910EEB7A2C4FE8EF00B0748E /* CapstoneDicodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB772C4FE8EF00B0748E /* CapstoneDicodingApp.swift */; };
 		910EEB7B2C4FE8EF00B0748E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB782C4FE8EF00B0748E /* ContentView.swift */; };
-		910EEB952C51124300B0748E /* CapstoneDicodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */; };
+		910EEB952C51124300B0748E /* GetMoviesRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEB942C51124300B0748E /* GetMoviesRepoTests.swift */; };
 		910EEC472C51398700B0748E /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC462C51398700B0748E /* Core */; };
 		910EEC522C51C59200B0748E /* Movie in Frameworks */ = {isa = PBXBuildFile; productRef = 910EEC512C51C59200B0748E /* Movie */; };
+		910EEC552C52367000B0748E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 910EEC532C52367000B0748E /* Localizable.strings */; };
+		910EEC582C523A1500B0748E /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EEC572C523A1500B0748E /* Localization.swift */; };
+		9115354C2C525B2C00BE2492 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9115354B2C525B2C00BE2492 /* .swiftlint.yml */; };
+		9115355B2C5284F200BE2492 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 9115355A2C5284F200BE2492 /* Nimble */; };
+		9115355E2C52852200BE2492 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 9115355D2C52852200BE2492 /* Quick */; };
 		915C84162BFD5F5D00FA112C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84152BFD5F5D00FA112C /* Assets.xcassets */; };
 		915C84192BFD5F5D00FA112C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C84182BFD5F5D00FA112C /* Preview Assets.xcassets */; };
 		915C84272BFD650600FA112C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C84262BFD650600FA112C /* SafariView.swift */; };
@@ -58,10 +63,14 @@
 		910EEB772C4FE8EF00B0748E /* CapstoneDicodingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapstoneDicodingApp.swift; sourceTree = "<group>"; };
 		910EEB782C4FE8EF00B0748E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		910EEB922C51124300B0748E /* CapstoneDicodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneDicodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneDicodingTests.swift; sourceTree = "<group>"; };
+		910EEB942C51124300B0748E /* GetMoviesRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesRepoTests.swift; sourceTree = "<group>"; };
 		910EEBED2C5126E100B0748E /* CapstoneMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CapstoneMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EEC022C512E4200B0748E /* CapstoneMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CapstoneMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EEC0E2C51312700B0748E /* CapstoneMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CapstoneMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910EEC542C52367000B0748E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		910EEC562C5238E500B0748E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		910EEC572C523A1500B0748E /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		9115354B2C525B2C00BE2492 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		915C840E2BFD5F5C00FA112C /* CapstoneDicoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneDicoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915C84152BFD5F5D00FA112C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915C84182BFD5F5D00FA112C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -92,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9115355E2C52852200BE2492 /* Quick in Frameworks */,
+				9115355B2C5284F200BE2492 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +180,7 @@
 		910EEB932C51124300B0748E /* CapstoneDicodingTests */ = {
 			isa = PBXGroup;
 			children = (
-				910EEB942C51124300B0748E /* CapstoneDicodingTests.swift */,
+				910EEB942C51124300B0748E /* GetMoviesRepoTests.swift */,
 			);
 			path = CapstoneDicodingTests;
 			sourceTree = "<group>";
@@ -196,6 +207,7 @@
 		915C84102BFD5F5C00FA112C /* CapstoneDicoding */ = {
 			isa = PBXGroup;
 			children = (
+				910EEC532C52367000B0748E /* Localizable.strings */,
 				910EEB792C4FE8EF00B0748E /* App */,
 				91D35FC32C37F482004C701E /* Utils */,
 				915F4DCF2C3673EE00BADA78 /* DI */,
@@ -204,6 +216,7 @@
 				915C841F2BFD601200FA112C /* Bindings */,
 				915C84152BFD5F5D00FA112C /* Assets.xcassets */,
 				915C84172BFD5F5D00FA112C /* Preview Content */,
+				9115354B2C525B2C00BE2492 /* .swiftlint.yml */,
 			);
 			path = CapstoneDicoding;
 			sourceTree = "<group>";
@@ -279,6 +292,7 @@
 		91D35FC32C37F482004C701E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				910EEC572C523A1500B0748E /* Localization.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -300,6 +314,10 @@
 				910EEB972C51124300B0748E /* PBXTargetDependency */,
 			);
 			name = CapstoneDicodingTests;
+			packageProductDependencies = (
+				9115355A2C5284F200BE2492 /* Nimble */,
+				9115355D2C52852200BE2492 /* Quick */,
+			);
 			productName = CapstoneDicodingTests;
 			productReference = 910EEB922C51124300B0748E /* CapstoneDicodingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -311,6 +329,7 @@
 				915C840A2BFD5F5C00FA112C /* Sources */,
 				915C840B2BFD5F5C00FA112C /* Frameworks */,
 				915C840C2BFD5F5C00FA112C /* Resources */,
+				910EEC5A2C5252F800B0748E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -351,11 +370,14 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 915C84052BFD5F5B00FA112C;
 			packageReferences = (
 				910EEC0B2C512F4400B0748E /* XCRemoteSwiftPackageReference "CapstoneCore" */,
 				910EEC502C51C59200B0748E /* XCLocalSwiftPackageReference "../Module/Movie" */,
+				911535592C5284F200BE2492 /* XCRemoteSwiftPackageReference "Nimble" */,
+				9115355C2C52852200BE2492 /* XCRemoteSwiftPackageReference "Quick" */,
 			);
 			productRefGroup = 915C840F2BFD5F5C00FA112C /* Products */;
 			projectDirPath = "";
@@ -379,11 +401,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9115354C2C525B2C00BE2492 /* .swiftlint.yml in Resources */,
 				915C84522BFD689800FA112C /* search_movie.json in Resources */,
 				915C844F2BFD689800FA112C /* Oxygen-Regular.ttf in Resources */,
 				915C84512BFD689800FA112C /* movie_info.json in Resources */,
 				915C84192BFD5F5D00FA112C /* Preview Assets.xcassets in Resources */,
 				915C84532BFD689800FA112C /* Oxygen-Bold.ttf in Resources */,
+				910EEC552C52367000B0748E /* Localizable.strings in Resources */,
 				915C84502BFD689800FA112C /* movie_list.json in Resources */,
 				915C84162BFD5F5D00FA112C /* Assets.xcassets in Resources */,
 			);
@@ -391,12 +415,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		910EEC5A2C5252F800B0748E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n \nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		910EEB8E2C51124300B0748E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910EEB952C51124300B0748E /* CapstoneDicodingTests.swift in Sources */,
+				910EEB952C51124300B0748E /* GetMoviesRepoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +460,7 @@
 				915C84272BFD650600FA112C /* SafariView.swift in Sources */,
 				915C842D2BFD657300FA112C /* ProfileView.swift in Sources */,
 				910EEB7A2C4FE8EF00B0748E /* CapstoneDicodingApp.swift in Sources */,
+				910EEC582C523A1500B0748E /* Localization.swift in Sources */,
 				910EEB742C4FD7A700B0748E /* CustomEmptyView.swift in Sources */,
 				910EEB722C4FD79200B0748E /* SearchBar.swift in Sources */,
 				915C84312BFD659500FA112C /* MovieDetailView.swift in Sources */,
@@ -437,6 +482,18 @@
 			targetProxy = 910EEB962C51124300B0748E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		910EEC532C52367000B0748E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910EEC542C52367000B0748E /* en */,
+				910EEC562C5238E500B0748E /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		910EEB992C51124300B0748E /* Debug */ = {
@@ -480,6 +537,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -543,6 +601,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -604,6 +663,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CapstoneDicoding/Preview Content\"";
 				DEVELOPMENT_TEAM = GRYDJB6WTG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -633,6 +693,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CapstoneDicoding/Preview Content\"";
 				DEVELOPMENT_TEAM = GRYDJB6WTG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -700,6 +761,22 @@
 				kind = branch;
 			};
 		};
+		911535592C5284F200BE2492 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.2;
+			};
+		};
+		9115355C2C52852200BE2492 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -711,6 +788,16 @@
 		910EEC512C51C59200B0748E /* Movie */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Movie;
+		};
+		9115355A2C5284F200BE2492 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 911535592C5284F200BE2492 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		9115355D2C52852200BE2492 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9115355C2C52852200BE2492 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

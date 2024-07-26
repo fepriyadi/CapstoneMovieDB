@@ -12,7 +12,7 @@ import Movie
 struct BackdropFavView: View {
     let movies: [Movie]
     @State private var isBack: Bool = false
-    @ObservedObject var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
+    @ObservedObject var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> >
     
     var body: some View {
             ScrollView(.vertical, showsIndicators: false) {

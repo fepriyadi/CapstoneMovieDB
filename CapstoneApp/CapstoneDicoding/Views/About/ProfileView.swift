@@ -35,7 +35,7 @@ struct ProfileView: View {
                     Text("Mobile Developer")
                 }
             }
-            .navigationTitle("About Me")
+            .navigationTitle("title_about".localized(identifier: "id.dicoding.CapstoneDicoding"))
         }
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import Core
 
-public struct FavoriteInteractor<Request, Response, R: Repository>: FavoriteUseCase
+public struct FavInteractor<Request, Response, R: Repository>: FavoriteUseCase
 where R.Request == Request, R.Response == Response{
     
     private let _repository: R

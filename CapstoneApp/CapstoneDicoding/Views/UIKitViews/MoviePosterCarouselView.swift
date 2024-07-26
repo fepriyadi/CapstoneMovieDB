@@ -10,11 +10,10 @@ import Core
 import Movie
 
 struct MoviePosterCarouselView: View {
-    
     let title: String
     let movies: [Movie]
-    @ObservedObject var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
-    
+    @ObservedObject
+    var presenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>>>
     
     var body: some View {
         LazyVStack(alignment: .leading, spacing: 16) {
@@ -22,7 +21,6 @@ struct MoviePosterCarouselView: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.horizontal)
-            
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(alignment: .top, spacing: 16) {
                     ForEach(self.movies) { movie in
@@ -36,13 +34,5 @@ struct MoviePosterCarouselView: View {
                 }
             }
         }
-        
     }
 }
-
-
-//struct MoviePosterCarouselView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MoviePosterCarouselView(title: "Now Playing", movies: Movie.stubbedMovies, presenter: Deta)
-//    }
-//}

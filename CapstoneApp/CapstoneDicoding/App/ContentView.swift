@@ -10,17 +10,13 @@ import Core
 import Movie
 
 struct ContentView: View {
-    let tabs = ["Movies", "Search", "Favourite", "About"]
+    let tabs = ["Movies", "Search", "Favorite", "About"]
     @EnvironmentObject var moviesPresenter : MoviesPresenter<Interactor<String, [Movie], GetMoviesRepository<GetMoviesDataSource>>>
-    
-    @EnvironmentObject var detailPresenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
-    
-    @EnvironmentObject var favoritePresenter: GetListPresenter<String, Movie, Interactor<String, [Movie], GetFavoriteMoviesRepository<GetFavoriteMoviesDataSource>>>
-    
+    @EnvironmentObject var detailPresenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> >
+    @EnvironmentObject var favoritePresenter: GetListPresenter<String, Movie, Interactor<String, [Movie], GetFavMoviesRepository<GetFavMoviesDataSource>>>
     @EnvironmentObject var searchPresenter: SearchPresenter<Movie, Interactor<String, [Movie], SearchMoviesRepository<GetMoviesDataSource>>>
-    
     var body: some View {
-        TabView() {
+        TabView {
             MovieListView(homePresenter: moviesPresenter, detailPresenter: detailPresenter)
                 .tabItem {
                     VStack {
@@ -29,7 +25,6 @@ struct ContentView: View {
                     }
             }
             .tag(0)
-            
             SearchView(presenter: searchPresenter, detail: detailPresenter)
                 .tabItem {
                     VStack {
@@ -38,21 +33,19 @@ struct ContentView: View {
                     }
                 }
             .tag(1)
-            
             FavouriteView(presenter: favoritePresenter, detailPresenter: detailPresenter)
                 .tabItem {
                     VStack {
                         Image(systemName: "heart")
-                        Text(tabs[1])
+                        Text(tabs[2])
                     }
                 }
             .tag(2)
-            
             ProfileView()
                 .tabItem {
                     VStack {
                         Image(systemName: "person")
-                        Text(tabs[2])
+                        Text(tabs[3])
                     }
                 }
             .tag(3)
@@ -65,4 +58,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

@@ -13,17 +13,17 @@ import Movie
 let injection = Injection()
 
 let homeUseCase: Interactor<String, [Movie], GetMoviesRepository<GetMoviesDataSource>> = injection.provideMovies()
-let _movieUseCase: Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>> = injection.provideMovie()
-let favUseCase: FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> = injection.provideFavorite()
+let movieUseCase: Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>> = injection.provideMovie()
+let favUseCase: FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> = injection.provideFavorite()
 
-let listFavUseCase: Interactor<String, [Movie], GetFavoriteMoviesRepository<GetFavoriteMoviesDataSource>> = injection.provideFavorites()
+let listFavUseCase: Interactor<String, [Movie], GetFavMoviesRepository<GetFavMoviesDataSource>> = injection.provideFavorites()
 let searchUseCase: Interactor<String, [Movie], SearchMoviesRepository<GetMoviesDataSource>> = injection.provideSearch()
 
 @main
 struct CapstoneDicodingApp: SwiftUI.App {
     
     let moviesPresenter = MoviesPresenter(moviesUseCase: homeUseCase)
-    let detailPresenter = MoviePresenter(movieUseCase: _movieUseCase, favoriteUseCase: favUseCase)
+    let detailPresenter = MoviePresenter(movieUseCase: movieUseCase, favoriteUseCase: favUseCase)
     let favoritePresenter = GetListPresenter(useCase: listFavUseCase)
     let searchPresenter = SearchPresenter(useCase: searchUseCase)
     

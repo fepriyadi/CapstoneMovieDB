@@ -10,12 +10,8 @@ import Core
 import Movie
 
 struct MovieListView: View {
-    
     @ObservedObject var homePresenter: MoviesPresenter<Interactor<String, [Movie], GetMoviesRepository<GetMoviesDataSource>>>
-    
-    @ObservedObject var detailPresenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavoriteInteractor<String, MovieObject, GetFavoriteMovieRepository<GetFavoriteMoviesDataSource>> >
-    
-    
+    @ObservedObject var detailPresenter: MoviePresenter<Interactor<String, Movie, GetMovieRepository<GetMovieDataSource>>, FavInteractor<String, MovieObject, GetFavMovieRepository<GetFavMoviesDataSource>> >
     @Environment(\.scenePhase) var scenePhase
     var body: some View {
         NavigationView {
@@ -43,8 +39,6 @@ struct MovieListView: View {
                     }
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-                
-                
                 Group {
                     if homePresenter.list.count>0 {
                         MovieBackdropCarouselView(title: "Top Rated", movies: homePresenter.list.filter { $0.source == .topRated }, presenter: detailPresenter)
@@ -54,15 +48,11 @@ struct MovieListView: View {
                             homePresenter.getMovies(request: MovieListEndpoint.topRated.rawValue)
                         }
                     }
-                    
-                    
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-                
                 Group {
                     if homePresenter.list.count>0 {
                         MovieBackdropCarouselView(title: "Popular", movies: homePresenter.list.filter { $0.source == .popular }, presenter: detailPresenter)
-                        
                     } else {
                         LoadingView(isLoading: homePresenter.isLoading, error: nil) {
                             homePresenter.getMovies(request: MovieListEndpoint.popular.rawValue)
@@ -72,7 +62,7 @@ struct MovieListView: View {
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            .navigationBarTitle("The MovieDb")
+            .navigationBarTitle("title_home".localized(identifier: "id.dicoding.CapstoneDicoding"))
         }
         .onAppear {
             homePresenter.getMovies(request: MovieListEndpoint.nowPlaying.rawValue)
