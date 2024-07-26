@@ -12,7 +12,6 @@ public struct MovieResponse: Decodable {
     public var results: [Movie]
 }
 
-
 public struct Movie: Decodable, Identifiable, Hashable {
     
     enum CodingKeys: String, CodingKey {

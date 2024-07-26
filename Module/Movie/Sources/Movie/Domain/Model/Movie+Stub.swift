@@ -9,7 +9,7 @@ import RealmSwift
 
 extension Movie {
     
-    static var stubbedMovies: [Movie] {
+    public static var stubbedMovies: [Movie] {
         let response: MovieResponse? = try? Bundle.main.loadAndDecodeJSON(filename: "movie_list")
         return response!.results
     }
@@ -87,7 +87,7 @@ public enum MovieListEndpoint: String, CaseIterable, Identifiable {
     case topRated = "top_rated"
     case popular
     
-    var description: String {
+    public var description: String {
         switch self {
             case .nowPlaying: return "Now Playing"
             case .upcoming: return "Upcoming"

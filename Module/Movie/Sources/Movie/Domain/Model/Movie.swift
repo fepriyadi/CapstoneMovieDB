@@ -170,7 +170,7 @@ public struct MovieVideo: Codable, Identifiable {
     }
 }
 
-extension Movie {
+public extension Movie {
     init(from movieObject: MovieObject) {
         self.id = movieObject.id
         self.title = movieObject.title
